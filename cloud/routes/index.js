@@ -5,5 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
-
+AV.Cloud.define('/', function(req, res) {
+  res.render('index', { title: 'Express' });
+});
 module.exports = router;
